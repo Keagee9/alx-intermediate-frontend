@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 font-sans antialiased text-gray-800 bg-gray-50">
+    <header class="mb-4 text-center">
+        <h1 class="text-3xl font-bold text-blue-700">Flexbox Navigation Bar</h1>
+    </header>
+
+    <nav class="flex space-x-5 justify-center bg-gray-700 text-white p-4 rounded-lg shadow-md">
+        <a href="#" class="px-4 py-2 text-xl hover:bg-gray-500 rounded-lg transition duration-300 ease-in-out">Home</a>
+        <a href="#" class="px-4 py-2 text-xl hover:bg-gray-500 rounded-lg transition duration-300 ease-in-out">About</a>
+        <a href="#" class="px-4 py-2 text-xl hover:bg-gray-500 rounded-lg transition duration-300 ease-in-out">Services</a>
+        <a href="#" class="px-4 py-2 text-xl hover:bg-gray-500 rounded-lg transition duration-300 ease-in-out">Contact</a>
+    </nav>
+
+    <main class="max-w-4xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-700 mb-4">Welcome!</h2>
+        <p class="text-gray-600">This page demonstrates a simple responsive navigation bar built with Tailwind CSS and Flexbox. Resize your browser window to see how the navigation adjusts on smaller screens.</p>
+    </main>
+</body>
+</html>
