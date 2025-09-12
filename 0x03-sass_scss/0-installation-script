@@ -1,0 +1,16 @@
+# Step 1: Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Exit and reopen terminal
+
+# Step 2: Install Node.js
+# The original prompt has an error in the node version command.
+# This is how you'd install a specific node version with nvm
+nvm install 20.16.0
+nvm use 20.16.0
+
+# Step 3: Install Sass
+npm install -g sass@1.77.4
+
+# Step 4: Verify Sass installation
+sass --version
